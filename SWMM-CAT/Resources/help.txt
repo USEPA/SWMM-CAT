@@ -1,0 +1,11 @@
+SWMM-CAT is a utility that adds location-specific climate change adjustments to a Storm Water Management Model (SWMM) project file. Adjustments can be applied on a monthly basis to air temperature, evaporation rates, and precipitation, as well as to the 24-hour design storm at different recurrence intervals. The source of these adjustments are global climate change models run as part of the World Climate Research Programme (WCRP) Coupled Model Intercomparison Project Phase 3 (CMIP3) archive. Downscaled results from this archive were generated and converted into changes with respect to historical values by USEPA's CREAT project (http://water.epa.gov/infrastructure/watersecurity/climate/creat.cfm).
+
+The following steps are used to select a set of adjustments to apply to SWMM:
+
+1) Enter the latitude and longitude coordinates of your location if available or its 5-digit zip code. SWMM-CAT will display a range of climate change outcomes for the CMIP3 results closest to your location.
+
+2) Select whether to use climate change projections based on either a near term or far term projection period. The displayed climate change outcomes will be updated to reflect your choice.
+
+3) Select a climate change outcome to save to SWMM. There are three choices that span the range of outcomes produced by the different global climate models used in the CMIP3 project. The Hot/Dry outcome represents a model whose average temperature change was on the high end and whose average rainfall change was on the lower end of all model projections. The Warm/Wet outcome represents a model whose average temperature change was on the lower end and whose average rainfall change was on the wetter end of the spectrum. The Median outcome is for a model whose temperature and rainfall changes were closest to the median of all models.
+
+4) Click the Save Adjustments to SWMM link to bring up a dialog form that will allow you select an existing SWMM project file to save your adjustments to. The form will also allow you to select which type of adjustments (monthly temperature, evaporation, rainfall, or 24-hour design storm) to save. Conversion of temperature and evaporation units is automatically handled depending on the unit system (US or SI) detected in the SWMM file.

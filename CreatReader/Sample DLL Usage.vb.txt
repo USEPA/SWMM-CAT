@@ -1,0 +1,204 @@
+'Get Precip monthly changes
+
+Dim pCREATPath As String = "C:\Program Files\CREAT 2.0"
+Dim lStation As String = "010008"
+Dim lLatitude As Double = 31.57
+Dim lLongitude As Double = -85.248
+
+Dim lClimateData As New CREATClimateData.ClimateData
+Dim lCREATPrecData As CREATClimateData.TempPrecipData
+
+Try
+    lCREATPrecData = lClimateData.GetCREATPrecip(pCREATPath, lLatitude, lLogitude, 2035)
+    Logger.Msg(lStation & vbTab & _
+                         lCREATPrecData.ModelHot.Jan & vbTab & _
+                         lCREATPrecData.ModelHot.Feb & vbTab & _
+                         lCREATPrecData.ModelHot.Mar & vbTab & _
+                         lCREATPrecData.ModelHot.Apr & vbTab & _
+                         lCREATPrecData.ModelHot.May & vbTab & _
+                         lCREATPrecData.ModelHot.Jun & vbTab & _
+                         lCREATPrecData.ModelHot.Jul & vbTab & _
+                         lCREATPrecData.ModelHot.Aug & vbTab & _
+                         lCREATPrecData.ModelHot.Sep & vbTab & _
+                         lCREATPrecData.ModelHot.Oct & vbTab & _
+                         lCREATPrecData.ModelHot.Nov & vbTab & _
+                         lCREATPrecData.ModelHot.Dec & vbTab & _
+                         lCREATPrecData.ModelHot.Annual)
+    Logger.Msg(lStation & vbTab & _
+                         lCREATPrecData.ModelMedium.Jan & vbTab & _
+                         lCREATPrecData.ModelMedium.Feb & vbTab & _
+                         lCREATPrecData.ModelMedium.Mar & vbTab & _
+                         lCREATPrecData.ModelMedium.Apr & vbTab & _
+                         lCREATPrecData.ModelMedium.May & vbTab & _
+                         lCREATPrecData.ModelMedium.Jun & vbTab & _
+                         lCREATPrecData.ModelMedium.Jul & vbTab & _
+                         lCREATPrecData.ModelMedium.Aug & vbTab & _
+                         lCREATPrecData.ModelMedium.Sep & vbTab & _
+                         lCREATPrecData.ModelMedium.Oct & vbTab & _
+                         lCREATPrecData.ModelMedium.Nov & vbTab & _
+                         lCREATPrecData.ModelMedium.Dec & vbTab & _
+                         lCREATPrecData.ModelMedium.Annual)
+    Logger.Msg(lStation & vbTab & _
+                         lCREATPrecData.ModelWet.Jan & vbTab & _
+                         lCREATPrecData.ModelWet.Feb & vbTab & _
+                         lCREATPrecData.ModelWet.Mar & vbTab & _
+                         lCREATPrecData.ModelWet.Apr & vbTab & _
+                         lCREATPrecData.ModelWet.May & vbTab & _
+                         lCREATPrecData.ModelWet.Jun & vbTab & _
+                         lCREATPrecData.ModelWet.Jul & vbTab & _
+                         lCREATPrecData.ModelWet.Aug & vbTab & _
+                         lCREATPrecData.ModelWet.Sep & vbTab & _
+                         lCREATPrecData.ModelWet.Oct & vbTab & _
+                         lCREATPrecData.ModelWet.Nov & vbTab & _
+                         lCREATPrecData.ModelWet.Dec & vbTab & _
+                         lCREATPrecData.ModelWet.Annual)
+Catch ex As Exception
+    Logger.Dbg("CREAT2035 Failed(" & lStation & "): " & ex.InnerException.Message())
+End Try
+
+Try
+    lCREATPrecData = lClimateData.GetCREATPrecip(pCREATPath, lLatitude, lLongitude, 2060)
+    Logger.Msg(lStation & vbTab & _
+                         lCREATPrecData.ModelHot.Jan & vbTab & _
+                         lCREATPrecData.ModelHot.Feb & vbTab & _
+                         lCREATPrecData.ModelHot.Mar & vbTab & _
+                         lCREATPrecData.ModelHot.Apr & vbTab & _
+                         lCREATPrecData.ModelHot.May & vbTab & _
+                         lCREATPrecData.ModelHot.Jun & vbTab & _
+                         lCREATPrecData.ModelHot.Jul & vbTab & _
+                         lCREATPrecData.ModelHot.Aug & vbTab & _
+                         lCREATPrecData.ModelHot.Sep & vbTab & _
+                         lCREATPrecData.ModelHot.Oct & vbTab & _
+                         lCREATPrecData.ModelHot.Nov & vbTab & _
+                         lCREATPrecData.ModelHot.Dec & vbTab & _
+                         lCREATPrecData.ModelHot.Annual)
+    Logger.Msg(lStation & vbTab & _
+                         lCREATPrecData.ModelMedium.Jan & vbTab & _
+                         lCREATPrecData.ModelMedium.Feb & vbTab & _
+                         lCREATPrecData.ModelMedium.Mar & vbTab & _
+                         lCREATPrecData.ModelMedium.Apr & vbTab & _
+                         lCREATPrecData.ModelMedium.May & vbTab & _
+                         lCREATPrecData.ModelMedium.Jun & vbTab & _
+                         lCREATPrecData.ModelMedium.Jul & vbTab & _
+                         lCREATPrecData.ModelMedium.Aug & vbTab & _
+                         lCREATPrecData.ModelMedium.Sep & vbTab & _
+                         lCREATPrecData.ModelMedium.Oct & vbTab & _
+                         lCREATPrecData.ModelMedium.Nov & vbTab & _
+                         lCREATPrecData.ModelMedium.Dec & vbTab & _
+                         lCREATPrecData.ModelMedium.Annual)
+    Logger.Msg(lStation & vbTab & _
+                         lCREATPrecData.ModelWet.Jan & vbTab & _
+                         lCREATPrecData.ModelWet.Feb & vbTab & _
+                         lCREATPrecData.ModelWet.Mar & vbTab & _
+                         lCREATPrecData.ModelWet.Apr & vbTab & _
+                         lCREATPrecData.ModelWet.May & vbTab & _
+                         lCREATPrecData.ModelWet.Jun & vbTab & _
+                         lCREATPrecData.ModelWet.Jul & vbTab & _
+                         lCREATPrecData.ModelWet.Aug & vbTab & _
+                         lCREATPrecData.ModelWet.Sep & vbTab & _
+                         lCREATPrecData.ModelWet.Oct & vbTab & _
+                         lCREATPrecData.ModelWet.Nov & vbTab & _
+                         lCREATPrecData.ModelWet.Dec & vbTab & _
+                         lCREATPrecData.ModelWet.Annual)
+Catch ex As Exception
+    Logger.Dbg("CREAT2060 Failed (" & lStation & "): " & ex.InnerException.Message())
+End Try
+
+'Get monthly temperature change
+Dim lCREATTempData As CREATClimateData.TempPrecipData
+Try
+    lCREATTempData = lClimateData.GetCREATTemp(pCREATPath, lLatitude, lLongitude, 2035)
+    Logger.Msg(lStation & vbTab & _
+               lCREATTempData.ModelHot.Jan & vbTab & _
+               lCREATTempData.ModelHot.Feb & vbTab & _
+               lCREATTempData.ModelHot.Mar & vbTab & _
+               lCREATTempData.ModelHot.Apr & vbTab & _
+               lCREATTempData.ModelHot.May & vbTab & _
+               lCREATTempData.ModelHot.Jun & vbTab & _
+               lCREATTempData.ModelHot.Jul & vbTab & _
+               lCREATTempData.ModelHot.Aug & vbTab & _
+               lCREATTempData.ModelHot.Sep & vbTab & _
+               lCREATTempData.ModelHot.Oct & vbTab & _
+               lCREATTempData.ModelHot.Nov & vbTab & _
+               lCREATTempData.ModelHot.Dec & vbTab & _
+               lCREATTempData.ModelHot.Annual)
+    Logger.Msg(lStation & vbTab & _
+               lCREATTempData.ModelMedium.Jan & vbTab & _
+               lCREATTempData.ModelMedium.Feb & vbTab & _
+               lCREATTempData.ModelMedium.Mar & vbTab & _
+               lCREATTempData.ModelMedium.Apr & vbTab & _
+               lCREATTempData.ModelMedium.May & vbTab & _
+               lCREATTempData.ModelMedium.Jun & vbTab & _
+               lCREATTempData.ModelMedium.Jul & vbTab & _
+               lCREATTempData.ModelMedium.Aug & vbTab & _
+               lCREATTempData.ModelMedium.Sep & vbTab & _
+               lCREATTempData.ModelMedium.Oct & vbTab & _
+               lCREATTempData.ModelMedium.Nov & vbTab & _
+               lCREATTempData.ModelMedium.Dec & vbTab & _
+               lCREATTempData.ModelMedium.Annual)
+    Logger.Msg(lStation & vbTab & _
+               lCREATTempData.ModelWet.Jan & vbTab & _
+               lCREATTempData.ModelWet.Feb & vbTab & _
+               lCREATTempData.ModelWet.Mar & vbTab & _
+               lCREATTempData.ModelWet.Apr & vbTab & _
+               lCREATTempData.ModelWet.May & vbTab & _
+               lCREATTempData.ModelWet.Jun & vbTab & _
+               lCREATTempData.ModelWet.Jul & vbTab & _
+               lCREATTempData.ModelWet.Aug & vbTab & _
+               lCREATTempData.ModelWet.Sep & vbTab & _
+               lCREATTempData.ModelWet.Oct & vbTab & _
+               lCREATTempData.ModelWet.Nov & vbTab & _
+               lCREATTempData.ModelWet.Dec & vbTab & _
+               lCREATTempData.ModelWet.Annual)
+Catch ex As Exception
+    Logger.Dbg("CREAT2035 Failed(" & lStation & "): " & ex.InnerException.Message())
+End Try
+
+Try
+    lCREATTempData = lClimateData.GetCREATTemp(pCREATPath, lLatitude, lLongitude, 2060)
+    Logger.Msg(lStation & vbTab & _
+               lCREATTempData.ModelHot.Jan & vbTab & _
+               lCREATTempData.ModelHot.Feb & vbTab & _
+               lCREATTempData.ModelHot.Mar & vbTab & _
+               lCREATTempData.ModelHot.Apr & vbTab & _
+               lCREATTempData.ModelHot.May & vbTab & _
+               lCREATTempData.ModelHot.Jun & vbTab & _
+               lCREATTempData.ModelHot.Jul & vbTab & _
+               lCREATTempData.ModelHot.Aug & vbTab & _
+               lCREATTempData.ModelHot.Sep & vbTab & _
+               lCREATTempData.ModelHot.Oct & vbTab & _
+               lCREATTempData.ModelHot.Nov & vbTab & _
+               lCREATTempData.ModelHot.Dec & vbTab & _
+               lCREATTempData.ModelHot.Annual)
+    Logger.Msg(lStation & vbTab & _
+               lCREATTempData.ModelMedium.Jan & vbTab & _
+               lCREATTempData.ModelMedium.Feb & vbTab & _
+               lCREATTempData.ModelMedium.Mar & vbTab & _
+               lCREATTempData.ModelMedium.Apr & vbTab & _
+               lCREATTempData.ModelMedium.May & vbTab & _
+               lCREATTempData.ModelMedium.Jun & vbTab & _
+               lCREATTempData.ModelMedium.Jul & vbTab & _
+               lCREATTempData.ModelMedium.Aug & vbTab & _
+               lCREATTempData.ModelMedium.Sep & vbTab & _
+               lCREATTempData.ModelMedium.Oct & vbTab & _
+               lCREATTempData.ModelMedium.Nov & vbTab & _
+               lCREATTempData.ModelMedium.Dec & vbTab & _
+               lCREATTempData.ModelMedium.Annual)
+    Logger.Msg(lStation & vbTab & _
+               lCREATTempData.ModelWet.Jan & vbTab & _
+               lCREATTempData.ModelWet.Feb & vbTab & _
+               lCREATTempData.ModelWet.Mar & vbTab & _
+               lCREATTempData.ModelWet.Apr & vbTab & _
+               lCREATTempData.ModelWet.May & vbTab & _
+               lCREATTempData.ModelWet.Jun & vbTab & _
+               lCREATTempData.ModelWet.Jul & vbTab & _
+               lCREATTempData.ModelWet.Aug & vbTab & _
+               lCREATTempData.ModelWet.Sep & vbTab & _
+               lCREATTempData.ModelWet.Oct & vbTab & _
+               lCREATTempData.ModelWet.Nov & vbTab & _
+               lCREATTempData.ModelWet.Dec & vbTab & _
+               lCREATTempData.ModelWet.Annual)
+Catch ex As Exception
+    Logger.Dbg("CREAT2060 Failed (" & lStation & "): " & ex.InnerException.Message())
+End Try
+
