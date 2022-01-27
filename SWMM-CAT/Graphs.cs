@@ -180,18 +180,18 @@ namespace SWMM_CAT
             // Create data arrays for annual max. rainfall adjustments
             Climate.xrain1 = new PointPairList();
             Climate.xrain2 = new PointPairList();
-            Climate.xrain3 = new PointPairList();
+            //Climate.xrain3 = new PointPairList();
 
             // Generate curves for each data array
-            LineItem myCurve1 = myPane.AddCurve("Hot/Dry", Climate.xrain1,
+            LineItem myCurve1 = myPane.AddCurve("Stormy", Climate.xrain1,
                 Color.Black, SymbolType.Triangle);
-            LineItem myCurve2 = myPane.AddCurve("Median", Climate.xrain2,
-                Color.Black, SymbolType.Diamond);
-            LineItem myCurve3 = myPane.AddCurve("Warm/Wet", Climate.xrain3,
+            LineItem myCurve2 = myPane.AddCurve("Less Stormy", Climate.xrain2,
                 Color.Black, SymbolType.TriangleDown);
+            //LineItem myCurve3 = myPane.AddCurve("Warm/Wet", Climate.xrain3,
+            //    Color.Black, SymbolType.TriangleDown);
             SetSymbolProperties(myCurve1, Color.Red);
-            SetSymbolProperties(myCurve2, Color.Gray);
-            SetSymbolProperties(myCurve3, Color.Cyan);
+            SetSymbolProperties(myCurve2, Color.Cyan);
+            //SetSymbolProperties(myCurve3, Color.Cyan);
 
             // Assign labels to the X-axis
             myPane.XAxis.Scale.TextLabels = Climate.returnPeriods;

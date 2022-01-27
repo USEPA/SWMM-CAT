@@ -104,24 +104,6 @@
     <None Include="Resources\evap.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\GEVdepth2035Hot.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GEVdepth2035Med.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GEVdepth2035Wet.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GEVdepth2060Hot.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GEVdepth2060Med.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GEVdepth2060Wet.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\GEVdepth_historical.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -165,7 +147,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <Content Include="Resources\GEVdepth2035LessStormy.txt" />
+    <Content Include="Resources\GEVdepth2035Stormy.txt" />
+    <Content Include="Resources\GEVdepth2060LessStormy.txt" />
+    <Content Include="Resources\GEVdepth2060Stormy.txt" />
     <Content Include="Resources\help.txt" />
+    <None Include="Resources\storm.txt" />
     <None Include="Resources\Temp2060Wet.txt" />
     <None Include="Resources\Temp2060Med.txt" />
     <None Include="Resources\Temp2060Hot.txt" />

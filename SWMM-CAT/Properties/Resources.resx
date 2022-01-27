@@ -121,24 +121,6 @@
   <data name="evap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\evap.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="GEVdepth2035Hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GEVdepth2035Hot.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="GEVdepth2035Med" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GEVdepth2035Med.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="GEVdepth2035Wet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GEVdepth2035Wet.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="GEVdepth2060Hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GEVdepth2060Hot.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="GEVdepth2060Med" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GEVdepth2060Med.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="GEVdepth2060Wet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GEVdepth2060Wet.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
   <data name="GEVdepth_historical" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GEVdepth_historical.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
@@ -207,5 +189,20 @@
   </data>
   <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\help.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GEVdepth2035LessStormy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GEVdepth2035LessStormy.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GEVdepth2035Stormy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GEVdepth2035Stormy.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GEVdepth2060LessStormy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GEVdepth2060LessStormy.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GEVdepth2060Stormy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GEVdepth2060Stormy.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="storm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\storm.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>

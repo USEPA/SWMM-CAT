@@ -12,7 +12,8 @@ namespace SWMM_CAT
 {
     public partial class SaveForm : Form
     {
-        public int scenario;
+        public int climate_scenario;
+        public int extreme_storm_scenario;
         public string inpFile;
 
         public SaveForm()
@@ -23,7 +24,8 @@ namespace SWMM_CAT
         private void SaveForm_Load(object sender, EventArgs e)
         {
             inpFile = MainForm.inpFile;
-            scenario = MainForm.scenario;
+            climate_scenario = MainForm.climate_scenario;
+            extreme_storm_scenario = MainForm.extreme_storm_scenario;
             textBox1.Text = inpFile;
             comboBox1.SelectedIndex = 0;
             if (inpFile.Length > 0)
@@ -59,7 +61,7 @@ namespace SWMM_CAT
             savedAdjustments[1] = checkBox2.Checked;
             savedAdjustments[2] = checkBox3.Checked;
             savedAdjustments[3] = checkBox4.Checked;
-            Climate.SaveAdjustments(inpFile, scenario, savedAdjustments, returnPeriodIndex);
+            Climate.SaveAdjustments(inpFile, climate_scenario, extreme_storm_scenario, savedAdjustments, returnPeriodIndex);
             DialogResult = System.Windows.Forms.DialogResult.OK;
         }
 
