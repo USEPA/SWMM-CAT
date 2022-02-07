@@ -34,7 +34,7 @@ namespace SWMM_CAT
 
         public static string[] returnPeriods = { "5", "10", "15", "30", "50", "100" };
 
-        public static string[] scenarioNames = { "None", "Hot/Dry", "Median", "Warm/Wet" };
+        public static string[] scenarioNames = { "None", "Hot/Dry", "Central", "Warm/Wet" };
 
         public static double evapUcf, tempUcf;
 

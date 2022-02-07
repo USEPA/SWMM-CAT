@@ -68,7 +68,7 @@ namespace SWMM_CAT
             // Generate curves for each data array
             LineItem myCurve1 = myPane.AddCurve("Hot/Dry", Climate.tempDelta1,
                 Color.Black, SymbolType.TriangleDown);
-            LineItem myCurve2 = myPane.AddCurve("Median", Climate.tempDelta2,
+            LineItem myCurve2 = myPane.AddCurve("Central", Climate.tempDelta2,
                 Color.Black, SymbolType.Diamond);
             LineItem myCurve3 = myPane.AddCurve("Warm/Wet", Climate.tempDelta3,
                 Color.Black, SymbolType.Triangle);
@@ -107,7 +107,7 @@ namespace SWMM_CAT
             // Generate curves for each data array
             LineItem myCurve1 = myPane.AddCurve("Hot/Dry", Climate.evapDelta1,
                 Color.Black, SymbolType.TriangleDown);
-            LineItem myCurve2 = myPane.AddCurve("Median", Climate.evapDelta2,
+            LineItem myCurve2 = myPane.AddCurve("Central", Climate.evapDelta2,
                 Color.Black, SymbolType.Diamond);
             LineItem myCurve3 = myPane.AddCurve("Warm/Wet", Climate.evapDelta3,
                 Color.Black, SymbolType.Triangle);
@@ -146,7 +146,7 @@ namespace SWMM_CAT
             // Generate curves for each data array
             LineItem myCurve1 = myPane.AddCurve("Hot/Dry", Climate.rainDelta1,
                 Color.Black, SymbolType.TriangleDown);
-            LineItem myCurve2 = myPane.AddCurve("Median", Climate.rainDelta2,
+            LineItem myCurve2 = myPane.AddCurve("Central", Climate.rainDelta2,
                 Color.Black, SymbolType.Diamond);
             LineItem myCurve3 = myPane.AddCurve("Warm/Wet", Climate.rainDelta3,
                 Color.Black, SymbolType.Triangle);
