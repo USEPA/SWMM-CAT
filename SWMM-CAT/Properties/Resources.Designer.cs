@@ -291,118 +291,113 @@ namespace SWMM_CAT.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to StationId	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Ann
-        ///010008	-8.59	-5.21	-3.7	-3.3	-15.05	-14.25	-23.25	-15.95	-15.15	0.62	-0.47	-0.54	-9.1
-        ///010063	-2.04	-3.09	-2.03	-1.94	-10.9	-11.34	-16.91	-15.6	-15.06	-1.36	-0.03	-0.13	-6.16
-        ///010140	-6.16	-5.35	-3.53	-2.45	-11.6	-13.41	-22.49	-17.11	-17.99	-0.86	0.8	-1.48	-8.28
-        ///010160	-6.26	-4.32	-2.69	-2.4	-13.34	-13.01	-21.57	-16.37	-15.08	-0.66	-0.08	-0.07	-7.77
-        ///010184	-3.57	-4.78	-3.08	-2.77	-9.79	-12.2	-19.23	-16.19	-17.38	-1.06	-0.14	-1.27	-6.94
-        ///010252 [rest of string was truncated]&quot;;.
+        ///USC00010008	2.14	-0.47	3.68	1.32	-1.68	4.6	-2.5	-4.47	5.05	6.7	-0.61	1.06	0.95
+        ///USC00010063	0.77	-3.21	5.86	2.65	-2.63	-2.92	-1.4	-1.01	3.81	-0.75	3.08	1.69	0.58
+        ///USC00010140	1.42	-2.68	3.1	1.46	-1.52	1.11	-1.71	-0.11	5.04	6.81	-1.94	1.44	0.8
+        ///USC00010252	1.08	-1.67	3.55	-0.05	-1.63	3.9	-2.96	-5.4	5.58	8.41	-1.81	1.79	0.44
+        ///USC00010369	0.61	-2.36	5.39	1.7	0.54	3.17	-0.68	-0.39	4.03	4.78	2.1	0.72	1.43
+        ///USC00010390	0.54	-3.33	6.79	3.13	-3.1	-2.35	-0.63	 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string PREC2035Hot {
+        internal static string PREC2035Central {
             get {
-                return ResourceManager.GetString("PREC2035Hot", resourceCulture);
+                return ResourceManager.GetString("PREC2035Central", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to StationId	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Ann
-        ///010008	3.33	0.74	3.96	-0.72	-12.8	-4.57	-4.42	2.29	36.82	-6.1	-10.49	-4.95	0.21
-        ///010063	4.87	1.07	3.11	3.03	3.22	-6.1	-3.56	6.69	6.53	5.9	1.31	-5.9	1.51
-        ///010140	3.57	4.46	3.25	-0.07	2.01	-8.38	-3.13	3.07	8.75	12.18	4.19	-11.06	1.17
-        ///010160	4.46	2.79	4.11	0.3	-8.6	-8.74	-5.55	-0.92	26.25	-8.27	-10.26	-3.77	-0.34
-        ///010184	4.26	1.39	4.26	0.91	0.58	-4.66	-4.08	5.73	5.22	6.43	0.68	-7.68	0.93
-        ///010252	1.95	5.58	1.78	-1.82	2.75	-10.92	-1.99	2.07	9.15	15. [rest of string was truncated]&quot;;.
+        ///USC00010008	0.73	-4.74	2.45	-5.43	-0.54	-3.56	-3.75	-0.5	6.12	-1.64	-5.38	-2.27	-1.75
+        ///USC00010063	-0.22	0.6	2.22	-0.88	-5.03	-8.51	-8.75	2.57	1.27	-1.08	-3.96	0.5	-1.81
+        ///USC00010140	-2.7	-2.93	0.13	-2.65	-6.08	-4.92	-4.47	1.65	6.66	0.03	-6.77	-2.92	-2.26
+        ///USC00010252	-2.4	-6.13	-1.82	-2.29	-1.81	-3.91	-6.06	1.46	7.86	4.97	-4.38	-2.3	-1.76
+        ///USC00010369	-0.77	-0.77	-0.78	-3.3	-6.8	-8.56	-4.44	0.01	2.72	0.16	-3.48	0.66	-2.17
+        ///USC00010390	-1.2	-0.18	2.96 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string PREC2035Med {
+        internal static string PREC2035HotDry {
             get {
-                return ResourceManager.GetString("PREC2035Med", resourceCulture);
+                return ResourceManager.GetString("PREC2035HotDry", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to StationId	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Ann
-        ///010008	4.06	12.39	-3.12	-2.27	-2.09	13.43	8.44	10.53	4.02	8.96	2.6	15.6	5.95
-        ///010063	5.25	10.26	5.33	-0.61	-3.05	9.99	8.41	7.03	2.41	4.91	-2.3	14.85	5.19
-        ///010140	4.78	12.15	-2.57	-4.08	-3.51	10.98	6.1	5.96	4.51	6.01	2.57	15.64	4.69
-        ///010160	-0.58	-7.63	-2.13	6.33	4.54	2.48	9.46	15.05	12.77	2.14	2.42	5.74	3.63
-        ///010184	5.13	12.97	2.38	-3.03	-3.06	10.26	6.01	4.82	3.27	4.08	0.78	15.45	4.81
-        ///010252	-0.54	-11.07	-4.49	10.45	4.74	-1.96	5.6	12.43	12.3	5. [rest of string was truncated]&quot;;.
+        ///USC00010008	0.31	10.51	5.25	3.63	4.27	6.29	2.11	3.47	13.44	4.8	2.13	3.77	5.03
+        ///USC00010063	7.05	8.61	9.81	4.51	1.99	2.58	6.52	7.61	13.49	7.86	0.94	4.22	6.21
+        ///USC00010140	2.44	8.41	4.73	3.49	7.09	4.91	9.9	7.64	17.92	8.18	-0.42	4.24	6.43
+        ///USC00010252	3.6	8.02	5.28	0.69	6.51	8.31	9.55	7.16	18.5	10.03	-0.17	2.78	6.63
+        ///USC00010369	3.34	10.58	7.86	5.53	4.42	3.52	3.23	6.32	12.92	3.54	1.95	5.82	5.8
+        ///USC00010390	7.5	8.92	9.98	4.08	1.51	3.23	6.06	7.78	11.51	7.3 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string PREC2035Wet {
+        internal static string PREC2035WetWarm {
             get {
-                return ResourceManager.GetString("PREC2035Wet", resourceCulture);
+                return ResourceManager.GetString("PREC2035WetWarm", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to StationId	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Ann
-        ///010008	-15.72	-9.54	-6.78	-6.04	-27.55	-26.08	-42.56	-29.19	-27.74	1.14	-0.85	-1	-16.65
-        ///010063	-3.73	-5.65	-3.71	-3.55	-19.95	-20.76	-30.95	-28.56	-27.57	-2.49	-0.06	-0.23	-11.28
-        ///010140	-11.28	-9.8	-6.46	-4.48	-21.23	-24.54	-41.16	-31.31	-32.92	-1.57	1.46	-2.7	-15.15
-        ///010160	-11.46	-7.91	-4.92	-4.4	-24.42	-23.81	-39.47	-29.96	-27.6	-1.21	-0.14	-0.12	-14.22
-        ///010184	-6.54	-8.74	-5.64	-5.08	-17.91	-22.33	-35.2	-29.62	-31.81	-1.95	-0.26	-2.33	-12. [rest of string was truncated]&quot;;.
+        ///USC00010008	4.18	-0.92	7.18	2.58	-3.27	8.97	-4.88	-8.72	9.86	13.08	-1.2	2.07	1.86
+        ///USC00010063	1.51	-6.27	11.44	5.17	-5.12	-5.69	-2.74	-1.98	7.43	-1.46	6.01	3.3	1.14
+        ///USC00010140	2.77	-5.23	6.05	2.85	-2.97	2.17	-3.34	-0.22	9.83	13.29	-3.78	2.8	1.56
+        ///USC00010252	2.11	-3.26	6.93	-0.1	-3.18	7.62	-5.77	-10.53	10.9	16.42	-3.54	3.49	0.85
+        ///USC00010369	1.2	-4.6	10.51	3.32	1.06	6.19	-1.33	-0.75	7.86	9.33	4.1	1.41	2.79
+        ///USC00010390	1.05	-6.49	13.24	6.1	-6.04	-4 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string PREC2060Hot {
+        internal static string PREC2060Central {
             get {
-                return ResourceManager.GetString("PREC2060Hot", resourceCulture);
+                return ResourceManager.GetString("PREC2060Central", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to StationId	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Ann
-        ///010008	6.1	1.36	7.25	-1.32	-23.42	-8.36	-8.1	4.2	67.38	-11.16	-19.21	-9.05	0.39
-        ///010063	8.92	1.96	5.69	5.54	5.89	-11.16	-6.51	12.25	11.95	10.8	2.4	-10.81	2.76
-        ///010140	6.53	8.16	5.95	-0.12	3.68	-15.33	-5.73	5.62	16.01	22.29	7.68	-20.25	2.15
-        ///010160	8.17	5.11	7.53	0.56	-15.73	-16	-10.17	-1.69	48.05	-15.14	-18.77	-6.91	-0.61
-        ///010184	7.8	2.54	7.8	1.66	1.07	-8.53	-7.47	10.49	9.56	11.78	1.24	-14.06	1.71
-        ///010252	3.57	10.21	3.26	-3.33	5.04	-19.98	-3.65	 [rest of string was truncated]&quot;;.
+        ///USC00010008	1.43	-9.24	4.78	-10.6	-1.05	-6.94	-7.31	-0.98	11.94	-3.19	-10.51	-4.43	-3.42
+        ///USC00010063	-0.44	1.17	4.33	-1.72	-9.81	-16.61	-17.07	5.02	2.48	-2.11	-7.74	0.98	-3.54
+        ///USC00010140	-5.27	-5.71	0.25	-5.17	-11.87	-9.59	-8.73	3.23	13.0	0.05	-13.22	-5.7	-4.4
+        ///USC00010252	-4.67	-11.97	-3.55	-4.47	-3.53	-7.63	-11.83	2.85	15.34	9.7	-8.54	-4.49	-3.43
+        ///USC00010369	-1.49	-1.5	-1.53	-6.44	-13.28	-16.71	-8.66	0.02	5.3	0.31	-6.8	1.29	-4.23
+        ///USC00010390	-2 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string PREC2060Med {
+        internal static string PREC2060HotDry {
             get {
-                return ResourceManager.GetString("PREC2060Med", resourceCulture);
+                return ResourceManager.GetString("PREC2060HotDry", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to StationId	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Ann
-        ///010008	7.43	22.68	-5.71	-4.16	-3.83	24.57	15.44	19.27	7.36	16.4	4.76	28.55	10.88
-        ///010063	9.61	18.77	9.76	-1.12	-5.59	18.29	15.4	12.87	4.41	8.99	-4.21	27.18	9.49
-        ///010140	8.75	22.23	-4.7	-7.47	-6.42	20.11	11.16	10.9	8.26	11	4.7	28.62	8.59
-        ///010160	-1.06	-13.96	-3.91	11.58	8.31	4.54	17.32	27.55	23.37	3.91	4.44	10.51	6.65
-        ///010184	9.38	23.74	4.36	-5.55	-5.6	18.77	11	8.83	5.99	7.46	1.42	28.27	8.81
-        ///010252	-0.99	-20.26	-8.22	19.12	8.67	-3.59	10.24	22.75 [rest of string was truncated]&quot;;.
+        ///USC00010008	0.6	20.5	10.24	7.08	8.34	12.28	4.12	6.78	26.23	9.37	4.16	7.35	9.82
+        ///USC00010063	13.76	16.8	19.14	8.8	3.88	5.04	12.71	14.85	26.32	15.34	1.83	8.23	12.11
+        ///USC00010140	4.77	16.4	9.23	6.8	13.84	9.59	19.31	14.9	34.97	15.95	-0.82	8.27	12.54
+        ///USC00010252	7.03	15.64	10.31	1.34	12.7	16.23	18.63	13.98	36.11	19.58	-0.33	5.42	12.95
+        ///USC00010369	6.51	20.65	15.33	10.8	8.62	6.86	6.31	12.34	25.21	6.91	3.81	11.36	11.32
+        ///USC00010390	14.64	17.4	19.47	7.96	2.9 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string PREC2060Wet {
+        internal static string PREC2060WetWarm {
             get {
-                return ResourceManager.GetString("PREC2060Wet", resourceCulture);
+                return ResourceManager.GetString("PREC2060WetWarm", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 10008	31.57	-85.248
-        ///10063	34.203	-87.181
-        ///10140	32.232	-87.411
-        ///10160	32.945	-85.948
-        ///10184	33.21	-88.288
-        ///10252	31.307	-86.522
-        ///10272	33.587	-85.856
-        ///10369	33.294	-85.779
-        ///10402	31.182	-87.439
-        ///10425	32.599	-85.465
-        ///10440	32.471	-86.68
-        ///10505	33.453	-87.357
-        ///10583	30.884	-87.785
-        ///10655	34.691	-86.882
-        ///10764	33.395	-87.008
-        ///10823	32.673	-86.665
-        ///10831	33.566	-86.745
-        ///10957	34.201	-86.163
-        ///11080	31.141	-87.048
-        ///11084	31.058	-87.055
-        ///11099	34.979	-85.801
-        ///11143	33.254	-87.294
-        ///11178	31.706	-85.837
-        ///11225	33. [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to USC00010008	31.5702	-85.2482
+        ///USC00010063	34.2553	-87.1814
+        ///USC00010140	32.2322	-87.4104
+        ///USC00010252	31.3071	-86.5226
+        ///USC00010369	33.2941	-85.7788
+        ///USC00010390	34.7752	-86.9508
+        ///USC00010402	31.182	-87.439
+        ///USC00010425	32.5992	-85.4653
+        ///USC00010748	33.6971	-87.6488
+        ///USC00010957	34.2008	-86.1633
+        ///USC00011099	34.9786	-85.8008
+        ///USC00012124	32.8622	-85.7358
+        ///USC00012172	30.2505	-88.0775
+        ///USC00012377	31.2833	-85.4
+        ///USC00012675	31.2975	-85.8996
+        ///USC00013043	34.4406	-85.7236
+        ///USC00013519	31.7901	-86.6087
+        ///USC0001 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string precip {
             get {
@@ -437,92 +432,92 @@ namespace SWMM_CAT.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Station 	Jan 	Feb 	Mar 	Apr 	May 	Jun 	Jul 	Aug 	Sep 	Oct 	Nov 	Dec
-        ///500172	1.759	1.536	1.399	1.187	0.932	1.25	1.102	0.932	0.964	1.112	1.547	1.95
-        ///500243	1.6	1.452	1.356	1.187	0.9	1.123	1.049	0.922	0.932	1.017	1.377	1.706
-        ///500275	1.759	1.536	1.399	1.187	0.932	1.25	1.102	0.932	0.964	1.112	1.547	1.95
-        ///500280	1.759	1.536	1.399	1.187	0.932	1.25	1.102	0.932	0.964	1.112	1.547	1.95
-        ///500302	1.823	1.558	1.42	1.144	0.932	1.367	1.166	0.922	0.975	1.155	1.632	2.098
-        ///500352	1.102	0.837	0.805	0.773	0.784	1.017	1.038	1.123 [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to StationId	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Ann
+        ///USC00010008	1.6	1.5	1.85	1.94	2.19	2.2	2.2	2.56	2.63	2.48	2.27	1.63	2.09
+        ///USC00010063	2.06	1.98	1.88	2.32	2.54	2.44	2.43	2.57	2.61	2.72	2.38	2.17	2.34
+        ///USC00010140	1.72	1.63	1.94	2.22	2.23	2.22	2.24	2.53	2.59	2.64	2.45	1.83	2.18
+        ///USC00010252	1.65	1.59	1.84	1.92	2.1	2.13	2.07	2.39	2.53	2.45	2.28	1.65	2.05
+        ///USC00010369	1.76	1.69	1.83	2.05	2.27	2.25	2.2	2.56	2.83	2.61	2.36	1.75	2.18
+        ///USC00010390	2.08	1.99	1.9	2.34	2.58	2.45	2.45	2.61	2.64	2.75	2.38	2.17	 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Temp2035Hot {
+        internal static string TEMP2035Central {
             get {
-                return ResourceManager.GetString("Temp2035Hot", resourceCulture);
+                return ResourceManager.GetString("TEMP2035Central", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Station 	Jan 	Feb 	Mar 	Apr 	May 	Jun 	Jul 	Aug 	Sep 	Oct 	Nov 	Dec
-        ///500172	2.045	1.526	1.717	1.324	1.134	0.943	0.741	0.593	0.625	0.763	1.091	1.134
-        ///500243	1.176	0.996	1.282	1.367	1.134	0.752	0.646	1.017	1.006	1.144	1.579	1.452
-        ///500275	2.045	1.526	1.717	1.324	1.134	0.943	0.741	0.593	0.625	0.763	1.091	1.134
-        ///500280	2.045	1.526	1.717	1.324	1.134	0.943	0.741	0.593	0.625	0.763	1.091	1.134
-        ///500302	2.151	1.611	1.791	1.314	1.134	1.091	0.773	0.614	0.625	0.794	1.123	1.166
-        ///500352	1.091	0.858	0.741	0.646	0.667	0.71	0 [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to StationId	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Ann
+        ///USC00010008	2.05	2.04	2.11	2.3	2.82	2.9	2.68	2.53	2.68	2.99	2.63	2.36	2.5
+        ///USC00010063	1.98	2.04	2.26	2.38	2.81	3.39	3.42	3.22	3.19	3.26	2.77	2.02	2.74
+        ///USC00010140	1.9	1.89	2.35	2.48	2.92	3.21	3.07	2.98	3.0	3.22	2.66	1.89	2.63
+        ///USC00010252	1.97	2.1	2.43	2.41	2.86	2.98	2.84	2.74	2.83	3.15	2.76	2.08	2.59
+        ///USC00010369	1.58	1.96	2.13	2.26	2.77	3.42	3.19	3.12	3.04	3.11	2.69	1.58	2.57
+        ///USC00010390	2.29	2.34	2.54	2.58	2.75	3.07	3.32	3.34	3.31	3.28	2.87	2.56 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Temp2035Med {
+        internal static string TEMP2035HotDry {
             get {
-                return ResourceManager.GetString("Temp2035Med", resourceCulture);
+                return ResourceManager.GetString("TEMP2035HotDry", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Station 	Jan 	Feb 	Mar 	Apr 	May 	Jun 	Jul 	Aug 	Sep 	Oct 	Nov 	Dec
-        ///500172	1.377	1.176	1.102	1.081	0.763	0.953	1.038	1.176	1.102	1.017	0.688	0.996
-        ///500243	1.589	1.536	1.081	0.784	0.794	0.932	0.996	0.996	0.922	1.017	1.515	1.812
-        ///500275	1.377	1.176	1.102	1.081	0.763	0.953	1.038	1.176	1.102	1.017	0.688	0.996
-        ///500280	1.377	1.176	1.102	1.081	0.763	0.953	1.038	1.176	1.102	1.017	0.688	0.996
-        ///500302	1.42	1.197	1.123	1.102	0.773	0.964	1.038	1.187	1.102	1.017	0.688	1.017
-        ///500352	0.72	0.879	1.006	0.911	0.72	0.657	0.7 [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to StationId	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Ann
+        ///USC00010008	1.41	1.96	1.56	2.0	2.22	1.95	1.86	1.88	2.17	2.18	1.83	1.8	1.91
+        ///USC00010063	1.79	2.0	1.67	2.04	2.48	2.19	1.89	1.96	2.3	2.4	2.06	1.83	2.05
+        ///USC00010140	1.35	2.22	1.63	2.18	2.37	2.15	1.85	1.87	2.11	2.21	1.92	1.71	1.96
+        ///USC00010252	1.62	2.02	1.59	2.09	2.26	2.02	1.8	1.74	2.02	2.08	1.91	1.68	1.91
+        ///USC00010369	1.47	2.01	1.53	2.11	2.36	2.12	1.9	1.98	2.3	2.3	1.91	1.86	1.98
+        ///USC00010390	1.8	2.01	1.67	2.06	2.49	2.22	1.94	2.02	2.34	2.45	2.08	1.83	2.0 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Temp2035Wet {
+        internal static string TEMP2035WetWarm {
             get {
-                return ResourceManager.GetString("Temp2035Wet", resourceCulture);
+                return ResourceManager.GetString("TEMP2035WetWarm", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Station 	Jan 	Feb 	Mar 	Apr 	May 	Jun 	Jul 	Aug 	Sep 	Oct 	Nov 	Dec
-        ///500172	3.22	2.813	2.56	2.172	1.707	2.289	2.017	1.707	1.765	2.036	2.832	3.569
-        ///500243	2.929	2.657	2.483	2.172	1.649	2.056	1.92	1.687	1.707	1.862	2.522	3.123
-        ///500275	3.22	2.813	2.56	2.172	1.707	2.289	2.017	1.707	1.765	2.036	2.832	3.569
-        ///500280	3.22	2.813	2.56	2.172	1.707	2.289	2.017	1.707	1.765	2.036	2.832	3.569
-        ///500302	3.336	2.851	2.599	2.095	1.707	2.502	2.134	1.687	1.784	2.114	2.987	3.841
-        ///500352	2.017	1.532	1.474	1.416	1.435	1.862	1.901	2 [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to StationId	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Ann
+        ///USC00010008	3.12	2.93	3.61	3.79	4.27	4.28	4.3	4.99	5.14	4.84	4.42	3.18	4.07
+        ///USC00010063	4.03	3.87	3.67	4.53	4.96	4.76	4.74	5.02	5.09	5.31	4.64	4.23	4.57
+        ///USC00010140	3.35	3.19	3.79	4.32	4.35	4.34	4.36	4.95	5.05	5.15	4.78	3.57	4.27
+        ///USC00010252	3.23	3.09	3.6	3.74	4.09	4.15	4.04	4.67	4.93	4.77	4.46	3.22	4.0
+        ///USC00010369	3.43	3.3	3.56	4.0	4.43	4.39	4.28	4.99	5.53	5.09	4.61	3.41	4.25
+        ///USC00010390	4.07	3.88	3.72	4.57	5.03	4.79	4.79	5.09	5.15	5.37	4.65	4.2 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Temp2060Hot {
+        internal static string TEMP2060Central {
             get {
-                return ResourceManager.GetString("Temp2060Hot", resourceCulture);
+                return ResourceManager.GetString("TEMP2060Central", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Station 	Jan 	Feb 	Mar 	Apr 	May 	Jun 	Jul 	Aug 	Sep 	Oct 	Nov 	Dec
-        ///500172	3.744	2.793	3.142	2.425	2.075	1.726	1.358	1.086	1.144	1.396	1.998	2.075
-        ///500243	2.153	1.823	2.347	2.502	2.075	1.377	1.183	1.862	1.843	2.095	2.89	2.657
-        ///500275	3.744	2.793	3.142	2.425	2.075	1.726	1.358	1.086	1.144	1.396	1.998	2.075
-        ///500280	3.744	2.793	3.142	2.425	2.075	1.726	1.358	1.086	1.144	1.396	1.998	2.075
-        ///500302	3.938	2.948	3.278	2.405	2.075	1.998	1.416	1.125	1.144	1.455	2.056	2.134
-        ///500352	1.998	1.571	1.358	1.183	1.222	1.299	1 [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to StationId	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Ann
+        ///USC00010008	4.0	3.99	4.12	4.49	5.5	5.66	5.23	4.93	5.23	5.83	5.13	4.61	4.9
+        ///USC00010063	3.86	3.97	4.42	4.65	5.47	6.62	6.68	6.29	6.23	6.37	5.41	3.93	5.33
+        ///USC00010140	3.71	3.69	4.59	4.84	5.69	6.27	5.99	5.82	5.86	6.29	5.19	3.69	5.13
+        ///USC00010252	3.85	4.1	4.74	4.7	5.58	5.81	5.54	5.35	5.53	6.14	5.38	4.07	5.06
+        ///USC00010369	3.09	3.83	4.15	4.4	5.41	6.68	6.22	6.09	5.93	6.07	5.26	3.08	5.02
+        ///USC00010390	4.46	4.56	4.95	5.04	5.37	5.99	6.48	6.52	6.46	6.41	5.6	5.0	5 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Temp2060Med {
+        internal static string TEMP2060HotDry {
             get {
-                return ResourceManager.GetString("Temp2060Med", resourceCulture);
+                return ResourceManager.GetString("TEMP2060HotDry", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Station 	Jan 	Feb 	Mar 	Apr 	May 	Jun 	Jul 	Aug 	Sep 	Oct 	Nov 	Dec
-        ///500172	2.522	2.153	2.017	1.978	1.396	1.746	1.901	2.153	2.017	1.862	1.261	1.823
-        ///500243	2.91	2.813	1.978	1.435	1.455	1.707	1.823	1.823	1.687	1.862	2.774	3.317
-        ///500275	2.522	2.153	2.017	1.978	1.396	1.746	1.901	2.153	2.017	1.862	1.261	1.823
-        ///500280	2.522	2.153	2.017	1.978	1.396	1.746	1.901	2.153	2.017	1.862	1.261	1.823
-        ///500302	2.599	2.192	2.056	2.017	1.416	1.765	1.901	2.172	2.017	1.862	1.261	1.862
-        ///500352	1.319	1.61	1.843	1.668	1.319	1.202	1. [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to StationId	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep	Oct	Nov	Dec	Ann
+        ///USC00010008	2.76	3.83	3.04	3.91	4.34	3.81	3.64	3.66	4.24	4.25	3.58	3.51	3.71
+        ///USC00010063	3.5	3.9	3.25	3.99	4.84	4.27	3.69	3.82	4.49	4.69	4.01	3.58	4.0
+        ///USC00010140	2.64	4.33	3.18	4.25	4.63	4.2	3.61	3.65	4.11	4.31	3.75	3.34	3.83
+        ///USC00010252	3.16	3.94	3.09	4.07	4.4	3.95	3.51	3.39	3.93	4.05	3.72	3.27	3.71
+        ///USC00010369	2.86	3.92	2.99	4.11	4.6	4.14	3.72	3.86	4.49	4.49	3.73	3.62	3.89
+        ///USC00010390	3.51	3.92	3.25	4.03	4.87	4.33	3.79	3.94	4.56	4.78	4.07	3.58 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Temp2060Wet {
+        internal static string TEMP2060WetWarm {
             get {
-                return ResourceManager.GetString("Temp2060Wet", resourceCulture);
+                return ResourceManager.GetString("TEMP2060WetWarm", resourceCulture);
             }
         }
         

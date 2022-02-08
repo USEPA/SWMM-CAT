@@ -19,6 +19,7 @@ namespace SWMM_CAT
         public static string precipID;
         public static string stormID;
         public static string evapID;
+        public static string tempID;
         public static int climate_scenario;
         public static int extreme_storm_scenario;
         public static int climateYear;
@@ -225,6 +226,7 @@ namespace SWMM_CAT
                 }
                 // Precip stations all have 6 characters padded in front with 0's.
                 while (precipID.Length < 6) precipID = "0" + precipID;
+                tempID = precipID;
                 return true;
             }
             catch (Exception ex)

@@ -150,22 +150,22 @@ namespace SWMM_CAT
             tempDelta3.Clear();
 
             if (MainForm.climateYear == 2035)
-                tempTable = SWMM_CAT.Properties.Resources.Temp2035Hot;
+                tempTable = SWMM_CAT.Properties.Resources.TEMP2035HotDry;
             else
-                tempTable = SWMM_CAT.Properties.Resources.Temp2060Hot;
-            if (GetTableData(tempTable, MainForm.evapID, 12, ref y)) tempDelta1.Add(null, y);
+                tempTable = SWMM_CAT.Properties.Resources.TEMP2060HotDry;
+            if (GetTableData(tempTable, MainForm.tempID, 12, ref y)) tempDelta1.Add(null, y);
 
             if (MainForm.climateYear == 2035)
-                tempTable = SWMM_CAT.Properties.Resources.Temp2035Med;
+                tempTable = SWMM_CAT.Properties.Resources.TEMP2035Central;
             else
-                tempTable = SWMM_CAT.Properties.Resources.Temp2060Med;
-            if (GetTableData(tempTable, MainForm.evapID, 12, ref y)) tempDelta2.Add(null, y);
+                tempTable = SWMM_CAT.Properties.Resources.TEMP2060Central;
+            if (GetTableData(tempTable, MainForm.tempID, 12, ref y)) tempDelta2.Add(null, y);
 
             if (MainForm.climateYear == 2035)
-                tempTable = SWMM_CAT.Properties.Resources.Temp2035Wet;
+                tempTable = SWMM_CAT.Properties.Resources.TEMP2035WetWarm;
             else
-                tempTable = SWMM_CAT.Properties.Resources.Temp2060Wet;
-            if (GetTableData(tempTable, MainForm.evapID, 12, ref y)) tempDelta3.Add(null, y);
+                tempTable = SWMM_CAT.Properties.Resources.TEMP2060WetWarm;
+            if (GetTableData(tempTable, MainForm.tempID, 12, ref y)) tempDelta3.Add(null, y);
         }
 
         private static void UpdateEvapAdjustments()
@@ -229,21 +229,21 @@ namespace SWMM_CAT
             rainDelta3.Clear();
 
             if (MainForm.climateYear == 2035)
-                precTable = SWMM_CAT.Properties.Resources.PREC2035Hot;
+                precTable = SWMM_CAT.Properties.Resources.PREC2035HotDry;
             else
-                precTable = SWMM_CAT.Properties.Resources.PREC2060Hot;
+                precTable = SWMM_CAT.Properties.Resources.PREC2060HotDry;
             if (GetTableData(precTable, MainForm.precipID, 12, ref y)) rainDelta1.Add(null, y);
 
             if (MainForm.climateYear == 2035)
-                precTable = SWMM_CAT.Properties.Resources.PREC2035Med;
+                precTable = SWMM_CAT.Properties.Resources.PREC2035Central;
             else
-                precTable = SWMM_CAT.Properties.Resources.PREC2060Med;
+                precTable = SWMM_CAT.Properties.Resources.PREC2060Central;
             if (GetTableData(precTable, MainForm.precipID, 12, ref y)) rainDelta2.Add(null, y);
 
             if (MainForm.climateYear == 2035)
-                precTable = SWMM_CAT.Properties.Resources.PREC2035Wet;
+                precTable = SWMM_CAT.Properties.Resources.PREC2035WetWarm;
             else
-                precTable = SWMM_CAT.Properties.Resources.PREC2060Wet;
+                precTable = SWMM_CAT.Properties.Resources.PREC2060WetWarm;
             if (GetTableData(precTable, MainForm.precipID, 12, ref y)) rainDelta3.Add(null, y);
         }
 
