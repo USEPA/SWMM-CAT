@@ -273,7 +273,7 @@ namespace SWMM_CAT
             if (MainForm.climateYear == 2035)
                 precTable = SWMM_CAT.Properties.Resources.GEVdepth2035LessStormy;
             else
-                precTable = SWMM_CAT.Properties.Resources.GEVdepth2035LessStormy;
+                precTable = SWMM_CAT.Properties.Resources.GEVdepth2060LessStormy;
             if (GetTableData(precTable, MainForm.stormID, 6, ref y))
             {
                 for (int i = 0; i < 6; i++) y[i] = (y[i] - x[i]) / x[i] * 100.0;
