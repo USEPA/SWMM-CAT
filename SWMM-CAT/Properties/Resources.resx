@@ -130,27 +130,6 @@
   <data name="zipcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zipcode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="Pmet_historical" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pmet_historical.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Pmet2035Hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pmet2035Hot.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Pmet2035Med" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pmet2035Med.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Pmet2035Wet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pmet2035Wet.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Pmet2060Hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pmet2060Hot.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Pmet2060Med" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pmet2060Med.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Pmet2060Wet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pmet2060Wet.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
   <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\help.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
@@ -204,5 +183,26 @@
   </data>
   <data name="TEMP2060WetWarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TEMP2060WetWarm.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HET_2035Central" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HET_2035Central.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HET_2035HotDry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HET_2035HotDry.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HET_2035WetWarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HET_2035WetWarm.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HET_2060Central" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HET_2060Central.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HET_2060HotDry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HET_2060HotDry.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HET_2060WetWarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HET_2060WetWarm.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HET_historical" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HET_historical.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>

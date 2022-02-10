@@ -134,6 +134,13 @@
     <Content Include="Resources\GEVdepth2060LessStormy.txt" />
     <Content Include="Resources\GEVdepth2060Stormy.txt" />
     <Content Include="Resources\help.txt" />
+    <None Include="Resources\HET_2035Central.txt" />
+    <None Include="Resources\HET_2035HotDry.txt" />
+    <None Include="Resources\HET_2035WetWarm.txt" />
+    <None Include="Resources\HET_2060Central.txt" />
+    <None Include="Resources\HET_2060HotDry.txt" />
+    <None Include="Resources\HET_2060WetWarm.txt" />
+    <None Include="Resources\HET_historical.txt" />
     <Content Include="Resources\PREC2035Central.txt" />
     <Content Include="Resources\PREC2035HotDry.txt" />
     <Content Include="Resources\PREC2035WetWarm.txt" />

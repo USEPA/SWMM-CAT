@@ -182,14 +182,14 @@ namespace SWMM_CAT
             evapDelta3.Clear();
 
             // Get historical monthly evap for current weather station
-            evapTable = SWMM_CAT.Properties.Resources.Pmet_historical;
+            evapTable = SWMM_CAT.Properties.Resources.HET_historical;
             if (GetTableData(evapTable, MainForm.evapID, 12, ref e) == false) return;
 
             // Get Hot/Dry adjustments 
             if (MainForm.climateYear == 2035)
-                evapTable = SWMM_CAT.Properties.Resources.Pmet2035Hot;
+                evapTable = SWMM_CAT.Properties.Resources.HET_2035HotDry;
             else
-                evapTable = SWMM_CAT    .Properties.Resources.Pmet2060Hot;
+                evapTable = SWMM_CAT    .Properties.Resources.HET_2060HotDry;
             if (GetTableData(evapTable, MainForm.evapID, 12, ref y))
             {
                 for (int i = 0; i < 12; i++) x[i] = y[i] - e[i];
@@ -198,9 +198,9 @@ namespace SWMM_CAT
 
             // Get Median adjustments
             if (MainForm.climateYear == 2035)
-                evapTable = SWMM_CAT.Properties.Resources.Pmet2035Med;
+                evapTable = SWMM_CAT.Properties.Resources.HET_2035Central;
             else
-                evapTable = SWMM_CAT.Properties.Resources.Pmet2060Med;
+                evapTable = SWMM_CAT.Properties.Resources.HET_2060Central;
             if (GetTableData(evapTable, MainForm.evapID, 12, ref y))
             {
                 for (int i = 0; i < 12; i++) x[i] = y[i] - e[i];
@@ -209,9 +209,9 @@ namespace SWMM_CAT
 
             // Get Warm/Wet adjustments
             if (MainForm.climateYear == 2035)
-                evapTable = SWMM_CAT.Properties.Resources.Pmet2035Wet;
+                evapTable = SWMM_CAT.Properties.Resources.HET_2035WetWarm;
             else
-                evapTable = SWMM_CAT.Properties.Resources.Pmet2060Wet;
+                evapTable = SWMM_CAT.Properties.Resources.HET_2060WetWarm;
             if (GetTableData(evapTable, MainForm.evapID, 12, ref y))
             {
                 for (int i = 0; i < 12; i++) x[i] = y[i] - e[i];
