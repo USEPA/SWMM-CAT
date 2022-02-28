@@ -153,19 +153,34 @@ namespace SWMM_CAT
                 tempTable = SWMM_CAT.Properties.Resources.TEMP2035HotDry;
             else
                 tempTable = SWMM_CAT.Properties.Resources.TEMP2060HotDry;
-            if (GetTableData(tempTable, MainForm.tempID, 12, ref y)) tempDelta1.Add(null, y);
+            if (GetTableData(tempTable, MainForm.tempID, 12, ref y))
+                for (int i = 0; i < y.Length; i++)
+                    {
+                        y[i] *= 5.0/9.0;
+                    }
+                tempDelta1.Add(null, y);
 
             if (MainForm.climateYear == 2035)
                 tempTable = SWMM_CAT.Properties.Resources.TEMP2035Central;
             else
                 tempTable = SWMM_CAT.Properties.Resources.TEMP2060Central;
-            if (GetTableData(tempTable, MainForm.tempID, 12, ref y)) tempDelta2.Add(null, y);
+            if (GetTableData(tempTable, MainForm.tempID, 12, ref y))
+                for (int i = 0; i < y.Length; i++)
+                    {
+                        y[i] *= 5.0 / 9.0;
+                    }
+                tempDelta2.Add(null, y);
 
             if (MainForm.climateYear == 2035)
                 tempTable = SWMM_CAT.Properties.Resources.TEMP2035WetWarm;
             else
                 tempTable = SWMM_CAT.Properties.Resources.TEMP2060WetWarm;
-            if (GetTableData(tempTable, MainForm.tempID, 12, ref y)) tempDelta3.Add(null, y);
+            if (GetTableData(tempTable, MainForm.tempID, 12, ref y))
+                for (int i = 0; i < y.Length; i++)
+                    {
+                        y[i] *= 5.0 / 9.0;
+                    }
+                tempDelta3.Add(null, y);
         }
 
         private static void UpdateEvapAdjustments()
