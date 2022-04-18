@@ -322,7 +322,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(185, 15);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Select a climate change outcome:";
+            this.label2.Text = "Select a climate change scenario:";
             // 
             // linkLabel1
             // 
