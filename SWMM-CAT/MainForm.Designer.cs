@@ -107,8 +107,8 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 15);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Version 1.1.0.0";
-            // 
+            this.label5.Text = "Version 1.1";
+            //
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
