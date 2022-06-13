@@ -280,8 +280,8 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(121, 15);
             this.label4.TabIndex = 10;
-            this.label4.Text = "or its 5-digit zip code:";
-            // 
+            this.label4.Text = "decimal degrees or its 5-digit zip code:";
+            //
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
@@ -407,8 +407,8 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 15);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Enter your location\'s latitude, longitude";
-            // 
+            this.label1.Text = "Enter your location\'s latitude, longitude in";
+            //
             // label6
             // 
             this.label6.AutoSize = true;
