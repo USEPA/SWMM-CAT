@@ -68,7 +68,7 @@ namespace SWMM_CAT
             // Generate curves for each data array
             LineItem myCurve1 = myPane.AddCurve("Hot/Dry", Climate.tempDelta1,
                 Color.Black, SymbolType.TriangleDown);
-            LineItem myCurve2 = myPane.AddCurve("Median", Climate.tempDelta2,
+            LineItem myCurve2 = myPane.AddCurve("Central", Climate.tempDelta2,
                 Color.Black, SymbolType.Diamond);
             LineItem myCurve3 = myPane.AddCurve("Warm/Wet", Climate.tempDelta3,
                 Color.Black, SymbolType.Triangle);
@@ -107,7 +107,7 @@ namespace SWMM_CAT
             // Generate curves for each data array
             LineItem myCurve1 = myPane.AddCurve("Hot/Dry", Climate.evapDelta1,
                 Color.Black, SymbolType.TriangleDown);
-            LineItem myCurve2 = myPane.AddCurve("Median", Climate.evapDelta2,
+            LineItem myCurve2 = myPane.AddCurve("Central", Climate.evapDelta2,
                 Color.Black, SymbolType.Diamond);
             LineItem myCurve3 = myPane.AddCurve("Warm/Wet", Climate.evapDelta3,
                 Color.Black, SymbolType.Triangle);
@@ -146,7 +146,7 @@ namespace SWMM_CAT
             // Generate curves for each data array
             LineItem myCurve1 = myPane.AddCurve("Hot/Dry", Climate.rainDelta1,
                 Color.Black, SymbolType.TriangleDown);
-            LineItem myCurve2 = myPane.AddCurve("Median", Climate.rainDelta2,
+            LineItem myCurve2 = myPane.AddCurve("Central", Climate.rainDelta2,
                 Color.Black, SymbolType.Diamond);
             LineItem myCurve3 = myPane.AddCurve("Warm/Wet", Climate.rainDelta3,
                 Color.Black, SymbolType.Triangle);
@@ -180,18 +180,18 @@ namespace SWMM_CAT
             // Create data arrays for annual max. rainfall adjustments
             Climate.xrain1 = new PointPairList();
             Climate.xrain2 = new PointPairList();
-            Climate.xrain3 = new PointPairList();
+            //Climate.xrain3 = new PointPairList();
 
             // Generate curves for each data array
-            LineItem myCurve1 = myPane.AddCurve("Hot/Dry", Climate.xrain1,
+            LineItem myCurve1 = myPane.AddCurve("Stormy", Climate.xrain1,
                 Color.Black, SymbolType.Triangle);
-            LineItem myCurve2 = myPane.AddCurve("Median", Climate.xrain2,
-                Color.Black, SymbolType.Diamond);
-            LineItem myCurve3 = myPane.AddCurve("Warm/Wet", Climate.xrain3,
+            LineItem myCurve2 = myPane.AddCurve("Less Stormy", Climate.xrain2,
                 Color.Black, SymbolType.TriangleDown);
+            //LineItem myCurve3 = myPane.AddCurve("Warm/Wet", Climate.xrain3,
+            //    Color.Black, SymbolType.TriangleDown);
             SetSymbolProperties(myCurve1, Color.Red);
-            SetSymbolProperties(myCurve2, Color.Gray);
-            SetSymbolProperties(myCurve3, Color.Cyan);
+            SetSymbolProperties(myCurve2, Color.Cyan);
+            //SetSymbolProperties(myCurve3, Color.Cyan);
 
             // Assign labels to the X-axis
             myPane.XAxis.Scale.TextLabels = Climate.returnPeriods;

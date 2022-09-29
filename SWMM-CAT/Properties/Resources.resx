@@ -121,44 +121,8 @@
   <data name="evap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\evap.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="GEVdepth2035Hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GEVdepth2035Hot.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="GEVdepth2035Med" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GEVdepth2035Med.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="GEVdepth2035Wet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GEVdepth2035Wet.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="GEVdepth2060Hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GEVdepth2060Hot.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="GEVdepth2060Med" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GEVdepth2060Med.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="GEVdepth2060Wet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GEVdepth2060Wet.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
   <data name="GEVdepth_historical" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GEVdepth_historical.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="PREC2035Hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PREC2035Hot.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="PREC2035Med" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PREC2035Med.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="PREC2035Wet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PREC2035Wet.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="PREC2060Hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PREC2060Hot.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="PREC2060Med" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PREC2060Med.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="PREC2060Wet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PREC2060Wet.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="precip" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\precip.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
@@ -166,46 +130,79 @@
   <data name="zipcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zipcode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="Pmet_historical" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pmet_historical.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Pmet2035Hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pmet2035Hot.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Pmet2035Med" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pmet2035Med.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Pmet2035Wet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pmet2035Wet.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Pmet2060Hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pmet2060Hot.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Pmet2060Med" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pmet2060Med.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Pmet2060Wet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pmet2060Wet.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Temp2035Hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Temp2035Hot.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Temp2035Med" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Temp2035Med.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Temp2035Wet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Temp2035Wet.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Temp2060Hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Temp2060Hot.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Temp2060Med" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Temp2060Med.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Temp2060Wet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Temp2060Wet.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
   <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\help.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GEVdepth2035LessStormy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GEVdepth2035LessStormy.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GEVdepth2035Stormy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GEVdepth2035Stormy.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GEVdepth2060LessStormy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GEVdepth2060LessStormy.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GEVdepth2060Stormy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GEVdepth2060Stormy.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="storm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\storm.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="PREC2035Central" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PREC2035Central.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="PREC2035HotDry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PREC2035HotDry.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="PREC2035WetWarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PREC2035WetWarm.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="PREC2060Central" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PREC2060Central.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="PREC2060HotDry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PREC2060HotDry.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="PREC2060WetWarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PREC2060WetWarm.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TEMP2035Central" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TEMP2035Central.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TEMP2035HotDry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TEMP2035HotDry.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TEMP2035WetWarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TEMP2035WetWarm.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TEMP2060Central" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TEMP2060Central.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TEMP2060HotDry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TEMP2060HotDry.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TEMP2060WetWarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TEMP2060WetWarm.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HET_2035Central" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HET_2035Central.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HET_2035HotDry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HET_2035HotDry.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HET_2035WetWarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HET_2035WetWarm.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HET_2060Central" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HET_2060Central.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HET_2060HotDry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HET_2060HotDry.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HET_2060WetWarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HET_2060WetWarm.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HET_historical" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HET_historical.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>

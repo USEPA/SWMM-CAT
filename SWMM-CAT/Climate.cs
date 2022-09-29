@@ -28,13 +28,13 @@ namespace SWMM_CAT
         // Data for zedGraphControl4 on MainForm
         public static PointPairList xrain1;
         public static PointPairList xrain2;
-        public static PointPairList xrain3;
+        // public static PointPairList xrain3;
 
         public static string[] monthLabels = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
 
         public static string[] returnPeriods = { "5", "10", "15", "30", "50", "100" };
 
-        public static string[] scenarioNames = { "None", "Hot/Dry", "Median", "Warm/Wet" };
+        public static string[] scenarioNames = { "None", "Hot/Dry", "Central", "Warm/Wet" };
 
         public static double evapUcf, tempUcf;
 
@@ -47,7 +47,7 @@ namespace SWMM_CAT
             UpdateExtremeAdjustments();
         }
 
-        public static void SaveAdjustments(string inpFile, int scenario,
+        public static void SaveAdjustments(string inpFile, int climate_scenario, int extreme_storm_scenario,
             bool[] savedAdjustments, int returnPeriodIndex)
         {
             PointPairList values;
@@ -59,7 +59,7 @@ namespace SWMM_CAT
             // Temperature adjustments
             if (savedAdjustments[0])
             {
-                switch (scenario)
+                switch (climate_scenario)
                 {
                     case 1: values = tempDelta1; break;
                     case 2: values = tempDelta2; break;
@@ -76,7 +76,7 @@ namespace SWMM_CAT
             // Evaporation adjustments
             if (savedAdjustments[1])
             {
-                switch (scenario)
+                switch (climate_scenario)
                 {
                     case 1: values = evapDelta1; break;
                     case 2: values = evapDelta2; break;
@@ -93,7 +93,7 @@ namespace SWMM_CAT
             // Rainfall adjustments
             if (savedAdjustments[2])
             {
-                switch (scenario)
+                switch (climate_scenario)
                 {
                     case 1: values = rainDelta1; break;
                     case 2: values = rainDelta2; break;
@@ -111,11 +111,11 @@ namespace SWMM_CAT
             // Extreme rainfall adjustment
             if (savedAdjustments[3])
             {
-                switch (scenario)
+                switch (extreme_storm_scenario)
                 {
                     case 1: values = xrain1; break;
                     case 2: values = xrain2; break;
-                    case 3: values = xrain3; break;
+                    //case 3: values = xrain3; break;
                     default: return;
                 }
                 double x = 1.0 + values[returnPeriodIndex].Y / 100.0;
@@ -150,22 +150,37 @@ namespace SWMM_CAT
             tempDelta3.Clear();
 
             if (MainForm.climateYear == 2035)
-                tempTable = SWMM_CAT.Properties.Resources.Temp2035Hot;
+                tempTable = SWMM_CAT.Properties.Resources.TEMP2035HotDry;
             else
-                tempTable = SWMM_CAT.Properties.Resources.Temp2060Hot;
-            if (GetTableData(tempTable, MainForm.evapID, 12, ref y)) tempDelta1.Add(null, y);
+                tempTable = SWMM_CAT.Properties.Resources.TEMP2060HotDry;
+            if (GetTableData(tempTable, MainForm.tempID, 12, ref y))
+                for (int i = 0; i < y.Length; i++)
+                    {
+                        y[i] *= 5.0/9.0;
+                    }
+                tempDelta1.Add(null, y);
 
             if (MainForm.climateYear == 2035)
-                tempTable = SWMM_CAT.Properties.Resources.Temp2035Med;
+                tempTable = SWMM_CAT.Properties.Resources.TEMP2035Central;
             else
-                tempTable = SWMM_CAT.Properties.Resources.Temp2060Med;
-            if (GetTableData(tempTable, MainForm.evapID, 12, ref y)) tempDelta2.Add(null, y);
+                tempTable = SWMM_CAT.Properties.Resources.TEMP2060Central;
+            if (GetTableData(tempTable, MainForm.tempID, 12, ref y))
+                for (int i = 0; i < y.Length; i++)
+                    {
+                        y[i] *= 5.0 / 9.0;
+                    }
+                tempDelta2.Add(null, y);
 
             if (MainForm.climateYear == 2035)
-                tempTable = SWMM_CAT.Properties.Resources.Temp2035Wet;
+                tempTable = SWMM_CAT.Properties.Resources.TEMP2035WetWarm;
             else
-                tempTable = SWMM_CAT.Properties.Resources.Temp2060Wet;
-            if (GetTableData(tempTable, MainForm.evapID, 12, ref y)) tempDelta3.Add(null, y);
+                tempTable = SWMM_CAT.Properties.Resources.TEMP2060WetWarm;
+            if (GetTableData(tempTable, MainForm.tempID, 12, ref y))
+                for (int i = 0; i < y.Length; i++)
+                    {
+                        y[i] *= 5.0 / 9.0;
+                    }
+                tempDelta3.Add(null, y);
         }
 
         private static void UpdateEvapAdjustments()
@@ -182,14 +197,14 @@ namespace SWMM_CAT
             evapDelta3.Clear();
 
             // Get historical monthly evap for current weather station
-            evapTable = SWMM_CAT.Properties.Resources.Pmet_historical;
+            evapTable = SWMM_CAT.Properties.Resources.HET_historical;
             if (GetTableData(evapTable, MainForm.evapID, 12, ref e) == false) return;
 
             // Get Hot/Dry adjustments 
             if (MainForm.climateYear == 2035)
-                evapTable = SWMM_CAT.Properties.Resources.Pmet2035Hot;
+                evapTable = SWMM_CAT.Properties.Resources.HET_2035HotDry;
             else
-                evapTable = SWMM_CAT    .Properties.Resources.Pmet2060Hot;
+                evapTable = SWMM_CAT    .Properties.Resources.HET_2060HotDry;
             if (GetTableData(evapTable, MainForm.evapID, 12, ref y))
             {
                 for (int i = 0; i < 12; i++) x[i] = y[i] - e[i];
@@ -198,9 +213,9 @@ namespace SWMM_CAT
 
             // Get Median adjustments
             if (MainForm.climateYear == 2035)
-                evapTable = SWMM_CAT.Properties.Resources.Pmet2035Med;
+                evapTable = SWMM_CAT.Properties.Resources.HET_2035Central;
             else
-                evapTable = SWMM_CAT.Properties.Resources.Pmet2060Med;
+                evapTable = SWMM_CAT.Properties.Resources.HET_2060Central;
             if (GetTableData(evapTable, MainForm.evapID, 12, ref y))
             {
                 for (int i = 0; i < 12; i++) x[i] = y[i] - e[i];
@@ -209,9 +224,9 @@ namespace SWMM_CAT
 
             // Get Warm/Wet adjustments
             if (MainForm.climateYear == 2035)
-                evapTable = SWMM_CAT.Properties.Resources.Pmet2035Wet;
+                evapTable = SWMM_CAT.Properties.Resources.HET_2035WetWarm;
             else
-                evapTable = SWMM_CAT.Properties.Resources.Pmet2060Wet;
+                evapTable = SWMM_CAT.Properties.Resources.HET_2060WetWarm;
             if (GetTableData(evapTable, MainForm.evapID, 12, ref y))
             {
                 for (int i = 0; i < 12; i++) x[i] = y[i] - e[i];
@@ -229,21 +244,21 @@ namespace SWMM_CAT
             rainDelta3.Clear();
 
             if (MainForm.climateYear == 2035)
-                precTable = SWMM_CAT.Properties.Resources.PREC2035Hot;
+                precTable = SWMM_CAT.Properties.Resources.PREC2035HotDry;
             else
-                precTable = SWMM_CAT.Properties.Resources.PREC2060Hot;
+                precTable = SWMM_CAT.Properties.Resources.PREC2060HotDry;
             if (GetTableData(precTable, MainForm.precipID, 12, ref y)) rainDelta1.Add(null, y);
 
             if (MainForm.climateYear == 2035)
-                precTable = SWMM_CAT.Properties.Resources.PREC2035Med;
+                precTable = SWMM_CAT.Properties.Resources.PREC2035Central;
             else
-                precTable = SWMM_CAT.Properties.Resources.PREC2060Med;
+                precTable = SWMM_CAT.Properties.Resources.PREC2060Central;
             if (GetTableData(precTable, MainForm.precipID, 12, ref y)) rainDelta2.Add(null, y);
 
             if (MainForm.climateYear == 2035)
-                precTable = SWMM_CAT.Properties.Resources.PREC2035Wet;
+                precTable = SWMM_CAT.Properties.Resources.PREC2035WetWarm;
             else
-                precTable = SWMM_CAT.Properties.Resources.PREC2060Wet;
+                precTable = SWMM_CAT.Properties.Resources.PREC2060WetWarm;
             if (GetTableData(precTable, MainForm.precipID, 12, ref y)) rainDelta3.Add(null, y);
         }
 
@@ -255,40 +270,31 @@ namespace SWMM_CAT
 
             xrain1.Clear();
             xrain2.Clear();
-            xrain3.Clear();
+            //xrain3.Clear();
 
             precTable = SWMM_CAT.Properties.Resources.GEVdepth_historical;
-            if (GetTableData(precTable, MainForm.precipID, 6, ref x) == false) return;
+            if (GetTableData(precTable, MainForm.stormID, 6, ref x) == false) return;
 
             if (MainForm.climateYear == 2035)
-                precTable = SWMM_CAT.Properties.Resources.GEVdepth2035Hot;
+                precTable = SWMM_CAT.Properties.Resources.GEVdepth2035Stormy;
             else
-                precTable = SWMM_CAT.Properties.Resources.GEVdepth2060Hot;
-            if (GetTableData(precTable, MainForm.precipID, 6, ref y))
+                precTable = SWMM_CAT.Properties.Resources.GEVdepth2060Stormy;
+            if (GetTableData(precTable, MainForm.stormID, 6, ref y))
             {
                 for (int i = 0; i < 6; i++) y[i] = (y[i] - x[i]) / x[i] * 100.0;
                 xrain1.Add(null, y);
             }
 
             if (MainForm.climateYear == 2035)
-                precTable = SWMM_CAT.Properties.Resources.GEVdepth2035Med;
+                precTable = SWMM_CAT.Properties.Resources.GEVdepth2035LessStormy;
             else
-                precTable = SWMM_CAT.Properties.Resources.GEVdepth2060Med;
-            if (GetTableData(precTable, MainForm.precipID, 6, ref y))
+                precTable = SWMM_CAT.Properties.Resources.GEVdepth2060LessStormy;
+            if (GetTableData(precTable, MainForm.stormID, 6, ref y))
             {
                 for (int i = 0; i < 6; i++) y[i] = (y[i] - x[i]) / x[i] * 100.0;
                 xrain2.Add(null, y);
             }
 
-            if (MainForm.climateYear == 2035)
-                precTable = SWMM_CAT.Properties.Resources.GEVdepth2035Wet;
-            else
-                precTable = SWMM_CAT.Properties.Resources.GEVdepth2060Wet;
-            if (GetTableData(precTable, MainForm.precipID, 6, ref y))
-            {
-                for (int i = 0; i < 6; i++) y[i] = (y[i] - x[i]) / x[i] * 100.0;
-                xrain3.Add(null, y);
-            }
         }
 
         // Retrieves n-values from a climate adjustment data file
