@@ -1,4 +1,12 @@
-"# SWMM-CAT" 
+# SWMM-CAT
+
+### Build Instructions
+
+  1. Clone the repository `git clone https://github.com/USEPA/SWMM-CAT.git`
+  2. Open SWMM-CAT.sln in Visual Studio
+  3. Right click on "Solution 'SWMM-CAT'" -> "Build Solution"
+  4. To package, create .zip file with SWMM-CAT.exe and ZedGraph.dll (from SWMM-CAT\bin\Release\), readme.txt (get from pervious version and update version number), and user's manual if desired. 
+
 
 # EPA Disclaimer
 
